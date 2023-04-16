@@ -8,8 +8,8 @@ import (
 
 func main() {
 	fmt.Println("Started")
-
-	out, err := exec.Command("fussballerinner.exe").Output()
+	commandPath := "G:/Projects/Godot/builds/Fussball.exe"
+	out, err := exec.Command(commandPath).Output()
 	if err != nil {
 		log.Fatal(err)
 	}

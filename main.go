@@ -15,7 +15,7 @@ func main() {
 	}
 	fmt.Println("Aloo")
 	// how to kill ->
-	//if err := cmd.Process.Kill(); err != nil {
+	// if err := cmd.Process.Kill(); err != nil {
 	//	log.Fatal("failed to kill process: ", err)
 	//	}
 	if err := cmd.Wait(); err != nil {
